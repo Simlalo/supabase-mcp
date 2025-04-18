@@ -2,7 +2,7 @@
 
 A Model Context Protocol (MCP) server that provides tools for interacting with a Supabase database. This server enables AI assistants to perform database operations through a standardized interface.
 
-NOTE: This Supabase MCP server was created as a demonstration of my AI IDE coding workflow. It is still a work in progress which I will expand on in future videos on [my channel](https://youtube.com/@ColeMedin).
+NOTE: This is a fork of the original Supabase MCP server with added npm support to allow running without Docker.
 
 ## Features
 
@@ -20,7 +20,7 @@ NOTE: This Supabase MCP server was created as a demonstration of my AI IDE codin
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/coleam00/supabase-mcp.git
+   git clone https://github.com/Simlalo/supabase-mcp.git
    cd supabase-mcp
    ```
 
@@ -322,6 +322,15 @@ The assistant will have access to the tools documented in the "Available Tools" 
 |----------|-------------|
 | `SUPABASE_URL` | URL of your Supabase project |
 | `SUPABASE_SERVICE_KEY` | Service role key for Supabase authentication |
+
+## Changes from Original Repository
+
+This fork adds the following features to the original repository:
+
+- **npm Support**: Run the MCP server using npm instead of requiring Docker
+- **Node.js Wrapper**: A JavaScript wrapper script to run the Python MCP server
+- **Updated Documentation**: Instructions for both Docker and npm setups
+- **Multiple Configuration Options**: Example configurations for Docker, npm, and Node.js
 
 ## License
 
