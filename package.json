@@ -1,0 +1,25 @@
+{
+  "name": "supabase-mcp",
+  "version": "0.1.0",
+  "description": "Model Context Protocol (MCP) server for Supabase database operations",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "supabase",
+    "mcp",
+    "database",
+    "ai"
+  ],
+  "author": "Cole Medin",
+  "license": "MIT",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.1.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

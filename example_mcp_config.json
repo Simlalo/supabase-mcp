@@ -1,0 +1,43 @@
+{
+  "mcpServers": {
+    "supabase": {
+      "__comment": "Choose one of the following configurations",
+      
+      "__docker_configuration": {
+        "command": "docker",
+        "args": ["run", "--rm", "-i", "-e", "SUPABASE_URL", "-e", "SUPABASE_SERVICE_KEY", "mcp/supabase"],
+        "env": {
+          "SUPABASE_URL": "YOUR-SUPABASE-URL",
+          "SUPABASE_SERVICE_KEY": "YOUR-SUPABASE-SERVICE-ROLE-KEY"
+        }
+      },
+      
+      "__npm_configuration": {
+        "command": "npm",
+        "args": ["start"],
+        "cwd": "path/to/supabase-mcp",
+        "env": {
+          "SUPABASE_URL": "YOUR-SUPABASE-URL",
+          "SUPABASE_SERVICE_KEY": "YOUR-SUPABASE-SERVICE-ROLE-KEY"
+        }
+      },
+      
+      "__node_configuration": {
+        "command": "node",
+        "args": ["index.js"],
+        "cwd": "path/to/supabase-mcp",
+        "env": {
+          "SUPABASE_URL": "YOUR-SUPABASE-URL",
+          "SUPABASE_SERVICE_KEY": "YOUR-SUPABASE-SERVICE-ROLE-KEY"
+        }
+      },
+      
+      "command": "docker",
+      "args": ["run", "--rm", "-i", "-e", "SUPABASE_URL", "-e", "SUPABASE_SERVICE_KEY", "mcp/supabase"],
+      "env": {
+        "SUPABASE_URL": "YOUR-SUPABASE-URL",
+        "SUPABASE_SERVICE_KEY": "YOUR-SUPABASE-SERVICE-ROLE-KEY"
+      }
+    }
+  }
+}
